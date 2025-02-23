@@ -3,14 +3,11 @@
 local_backend: true
 
 backend:
-  # branch: develop # optional, defaults to master
-  # name: git-gateway # local name
-  name: git-gateway #github # remote name
+  name: github # remote name
   repo: belovern/jekyll-test
-  
-  #auth_type: pkce # Required for pkce
-  #app_id: # Application ID from your GitLab settings
-publish_mode: simple #editorial_workflow # in local use simple
+  branch: main
+  base_url: https://sveltia-cms-auth.belovern.workers.dev/
+publish_mode: editorial_workflow # in local use simple
 media_folder: 'media'
 collections:
   - name: 'blog'
